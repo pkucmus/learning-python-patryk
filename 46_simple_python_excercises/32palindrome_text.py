@@ -1,8 +1,12 @@
 from sys import argv
 import re
 
+try:
+    script, filename = argv
+except ValueError:
+    print "You have to input a file name:"
+    filename = raw_input()
 
-script, filename = argv
 f = open(filename, 'rU')
 lines = [line.rstrip('\n') for line in f]
 
