@@ -1,4 +1,3 @@
-# You shouldn't use the python built'in sum() function
 
 def sum(l):
     result = 0

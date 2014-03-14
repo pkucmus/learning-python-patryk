@@ -8,7 +8,6 @@ VOWELS = ('a', 'e', 'i', 'o', 'u', 'y',)
 
 def vowel(i):
     i = i.lower()
-    # Use the `in` statement:
     if i in VOWELS:
         return True
     else:

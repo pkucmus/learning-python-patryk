@@ -1,13 +1,11 @@
 def filter_long_words(l, n):
 
-	for w in l:
-		len_words = len(w)
-		if len_words > n:
-			print w
+    l2 = []
+    for w in l:
+        len_words = len(w)
+        if len_words > n:
+            l2.append(w)
+    return l2
 
-lista = ['abc','aaaa','asdfasdfadf','asdfg','qwerty','ab']
+lista = ['abc', 'aaaa', 'asdfasdfadf', 'asdfg', 'qwerty', 'ab']
 print filter_long_words(lista, 3)
-
-
-# Return those words to an output list. Dont print a function that return
-# nothing, and first of all don't make such functions.
