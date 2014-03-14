@@ -17,17 +17,13 @@ def palindrome(text):
     text = text.lower()
     if text[::-1] == text:
         return True
-    else:
-        return False
+    return False
 
 
 def main():
-
     for line in lines:
-        if palindrome(line) == True:
+        if palindrome(line) is True:
             print line
-        else:
-            pass
 
 
 if __name__ == '__main__':
